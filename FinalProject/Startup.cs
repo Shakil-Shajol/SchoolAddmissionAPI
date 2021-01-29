@@ -61,11 +61,6 @@ namespace FinalProject
 
             app.UseMvc();
             app.UseStaticFiles();
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Files")),
-                RequestPath = new PathString("/Files")
-            });
         }
     }
 }
